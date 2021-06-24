@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="assets/img/logo/group_logo.png" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Group Chat | MFSWD | Conversation</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+    <script type="module" src="assets/js/conversation.js" defer></script>
+  </head>
+
+  <body class="conversation-in-details">
+    <header>
+      <nav id="nav">
+        <div class="project_logo">
+          <a href="#">
+            <img
+              src="assets/img/logo/group_logo.png"
+              alt="Project logo"
+              id="project_logo"
+              class="project_img"
+            />
+          </a>
+        </div>
+        <div id="profile_section" class="profile_section">
+          <div class="profile">
+            <img src="" alt="" id="profile_img" class="profile_img" />
+            <span id="Profile_name"></span>
+          </div>
+
+          <div class="logOutbtn" id="logOutbtn">
+            <img
+              src="assets/img/logo/signout.png"
+              alt="Profile_img"
+              id="profile_img"
+              class="profile_img"
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="conversation" id="conversation">
+      <div class="conversation-list">
+        <div class="conversation-title">
+          <h3>All Conversation</h3>
+        </div>
+        <div class="groups" id="groups"></div>
+      </div>
+
+      <div class="conversation-expand">
+        <div class="conversation_header">
+          <div class="head_image">
+            <img
+              id="head_img"
+              width="100px"
+              height="100px"
+              src="assets/img/groups/javascript_developers.png"
+            />
+          </div>
+          <div class="group-title" id="group-title">
+            <!-- <h3>javascript</h3> -->
+            <h3></h3>
+          </div>
+        </div>
+
+        <!-- Star msg show div  -->
+        <div id="conversation-desc" class="conversation-desc"></div>
+
+        <!-- End msg show div  -->
+
+        <!-- Msg typing start  -->
+        <div class="message_typing">
+          <p class="typing_check" id="typing_check"></p>
+          <div class="type_info">
+            <div class="type_box">
+              <input id="msgSend" type="text" placeholder="Type here" />
+            </div>
+            <div class="sent_logo">
+              <img
+                height="32px"
+                width="32px"
+                src="assets/img/logo/sent.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Msg typing End  -->
+      </div>
+    </section>
+  </body>
+</html>
